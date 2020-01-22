@@ -123,8 +123,8 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:0c69a68fee361d7bf5ee8a06429f397ec0d6c95615890cbdc4bc97aaecad2f52"
-  name = "github.com/v1nland/ms-apiservice"
+  digest = "1:7407397ce51e35f3799acab4b19470fbfabaf674bbb05dc97d0e46af35c10528"
+  name = "github.com/v1nland/mafi-backend-go"
   packages = [
     "ApiHelpers",
     "Config",
@@ -133,7 +133,7 @@
     "Routers",
   ]
   pruneopts = "UT"
-  revision = "a8b16268719bf87197fffdda78c082b7df0205d0"
+  revision = "caf0084c5d5a8ed7f604b551da63e597f1778f64"
 
 [[projects]]
   branch = "master"
@@ -166,11 +166,11 @@
     "github.com/gin-gonic/gin",
     "github.com/go-sql-driver/mysql",
     "github.com/jinzhu/gorm",
-    "github.com/v1nland/ms-apiservice/ApiHelpers",
-    "github.com/v1nland/ms-apiservice/Config",
-    "github.com/v1nland/ms-apiservice/Controllers",
-    "github.com/v1nland/ms-apiservice/Models",
-    "github.com/v1nland/ms-apiservice/Routers",
+    "github.com/v1nland/mafi-backend-go/ApiHelpers",
+    "github.com/v1nland/mafi-backend-go/Config",
+    "github.com/v1nland/mafi-backend-go/Controllers",
+    "github.com/v1nland/mafi-backend-go/Models",
+    "github.com/v1nland/mafi-backend-go/Routers",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
