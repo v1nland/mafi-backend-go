@@ -24,20 +24,24 @@ Config.DB, err = gorm.Open("mysql", "DBUSERNAME:DBPASSWORD@tcp(127.0.0.1:3306)/D
 ## Structure
 ```
 ├── Models
-│   ├── Item.go // Item models
-|	├── Scheme.go // Item struct and tabel
+│   ├── Items.go // Items model
+│   ├── Orders.go // Orders model
+|	├── Scheme.go // Structures and tables
 ├── Config
-│   └── Database.go // Global DB
+│   └── Database.go // Global database variables
 ├── Controllers
-│   └── Item.go // Item Controller
+│   └── Item.go // Item controller
+│   └── Order.go // Order controller
 ├── ApiHelpers
-│   └── Response.go // response function
+│   └── Response.go // Response function
 ├── Routers
 |   └── Routers.go // Routers
 └── main.go
 ```
 
 ## API
+
+Pending: OpenAPI 3.0 spec.
 
 #### /item
 * `GET` : Get all item

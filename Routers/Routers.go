@@ -22,6 +22,12 @@ func SetupRouter() *gin.Engine {
 		v1.GET("order/:id", Controllers.GetOneOrder)
 		v1.PUT("order/:id", Controllers.PutOneOrder)
 		v1.DELETE("order/:id", Controllers.DeleteOrder)
+
+		v1.GET("purchase", Controllers.ListPurchase)
+		v1.POST("purchase", Controllers.AddNewPurchase)
+		v1.GET("purchase/:id", Controllers.GetOnePurchase)
+		v1.PUT("purchase/:id", Controllers.PutOnePurchase)
+		v1.DELETE("purchase/:id", Controllers.DeletePurchase)
 	}
 
 	return r

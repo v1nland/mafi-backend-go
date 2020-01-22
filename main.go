@@ -19,6 +19,7 @@ func main() {
 
 	Config.DB.AutoMigrate(&Models.Item{})
 	Config.DB.AutoMigrate(&Models.Order{})
+	Config.DB.AutoMigrate(&Models.Purchase{})
 
 	r := Routers.SetupRouter()
 
