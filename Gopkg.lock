@@ -123,7 +123,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:3b0062833cf7ec6a9438d4306db0659666b05a057ce8010d94660aeedf452a02"
+  digest = "1:4cd8127d475ed82b1daa2a6ff1102eb5d867438016da003af15f1fbcdf902690"
   name = "github.com/v1nland/mafi-backend-go"
   packages = [
     "ApiHelpers",
@@ -133,7 +133,7 @@
     "Routers",
   ]
   pruneopts = "UT"
-  revision = "bec6d51ee484fa682544816a100b72ea446ec1f6"
+  revision = "9553b2a3ebba9150da233e098d2984ad3d2d6989"
 
 [[projects]]
   branch = "master"
