@@ -34,3 +34,15 @@ type Order struct {
 func (o *Order) TableName() string {
 	return "orders"
 }
+
+type Purchase struct {
+	gorm.Model
+	Item_id			string	`json:"item_id"`
+	Description		string	`json:"description"`
+	Date			string	`json:"date"`
+	Item_qty		string	`json:"item_qty"`
+}
+
+func (p *Purchase) TableName() string {
+	return "purchases"
+}
