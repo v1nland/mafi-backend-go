@@ -6,34 +6,34 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func GetAllItem(i *[]Item) (err error) {
-	if err = Config.DB.Find(i).Error; err != nil {
+func GetAllItem(item *[]Item) (err error) {
+	if err = Config.DB.Find(item).Error; err != nil {
 		return err
 	}
 	return nil
 }
 
-func AddNewItem(i *Item) (err error) {
-	if err = Config.DB.Create(i).Error; err != nil {
+func AddNewItem(item *Item) (err error) {
+	if err = Config.DB.Create(item).Error; err != nil {
 		return err
 	}
 	return nil
 }
 
-func GetOneItem(i *Item, id string) (err error) {
-	if err := Config.DB.Where("id = ?", id).First(i).Error; err != nil {
+func GetOneItem(item *Item, id string) (err error) {
+	if err := Config.DB.Where("id = ?", id).First(item).Error; err != nil {
 		return err
 	}
 	return nil
 }
 
-func PutOneItem(i *Item, id string) (err error) {
-	fmt.Println(i)
-	Config.DB.Save(i)
+func PutOneItem(item *Item, id string) (err error) {
+	fmt.Println(item)
+	Config.DB.Save(item)
 	return nil
 }
 
-func DeleteItem(i *Item, id string) (err error) {
-	Config.DB.Where("id = ?", id).Delete(i)
+func DeleteItem(item *Item, id string) (err error) {
+	Config.DB.Where("id = ?", id).Delete(item)
 	return nil
 }

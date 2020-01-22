@@ -16,3 +16,21 @@ type Item struct {
 func (i *Item) TableName() string {
 	return "items"
 }
+
+type Order struct {
+	gorm.Model
+	Item_id			string	`json:"item_id"`
+	Buyer			string	`json:"buyer"`
+	Description		string	`json:"description"`
+	Contact			string	`json:"contact"`
+	Date			string	`json:"date"`
+	Discount		string	`json:"discount"`
+	Location		string	`json:"location"`
+	Hour			string	`json:"hour"`
+	Source			string	`json:"source"`
+	Finished		string	`json:"finished"`
+}
+
+func (i *Order) TableName() string {
+	return "orders"
+}
