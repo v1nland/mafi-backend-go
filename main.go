@@ -18,6 +18,7 @@ func main() {
 	defer Config.DB.Close()
 
 	Config.DB.AutoMigrate(&Models.Item{})
+	Config.DB.AutoMigrate(&Models.Order{})
 
 	r := Routers.SetupRouter()
 

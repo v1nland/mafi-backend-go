@@ -31,6 +31,6 @@ type Order struct {
 	Finished		string	`json:"finished"`
 }
 
-func (i *Order) TableName() string {
+func (o *Order) TableName() string {
 	return "orders"
 }
