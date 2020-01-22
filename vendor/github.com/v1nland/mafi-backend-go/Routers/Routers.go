@@ -16,6 +16,12 @@ func SetupRouter() *gin.Engine {
 		v1.GET("item/:id", Controllers.GetOneItem)
 		v1.PUT("item/:id", Controllers.PutOneItem)
 		v1.DELETE("item/:id", Controllers.DeleteItem)
+
+		v1.GET("order", Controllers.ListOrder)
+		v1.POST("order", Controllers.AddNewOrder)
+		v1.GET("order/:id", Controllers.GetOneOrder)
+		v1.PUT("order/:id", Controllers.PutOneOrder)
+		v1.DELETE("order/:id", Controllers.DeleteOrder)
 	}
 
 	return r
