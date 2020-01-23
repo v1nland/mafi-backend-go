@@ -1,7 +1,7 @@
 package Routers
 
 import (
-	"github.com/v1nland/mafi-backend-go/Controllers"
+	"mafi-backend-go/Controllers"
 	"github.com/gin-gonic/gin"
 )
 

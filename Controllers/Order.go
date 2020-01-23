@@ -1,8 +1,8 @@
 package Controllers
 
 import (
-	"github.com/v1nland/mafi-backend-go/ApiHelpers"
-	"github.com/v1nland/mafi-backend-go/Models"
+	"mafi-backend-go/ApiHelpers"
+	"mafi-backend-go/Models"
 	"github.com/gin-gonic/gin"
 )
 

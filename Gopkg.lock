@@ -123,25 +123,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:4cd8127d475ed82b1daa2a6ff1102eb5d867438016da003af15f1fbcdf902690"
-  name = "github.com/v1nland/mafi-backend-go"
-  packages = [
-    "ApiHelpers",
-    "Config",
-    "Controllers",
-    "Models",
-    "Routers",
-  ]
-  pruneopts = "UT"
-  revision = "9553b2a3ebba9150da233e098d2984ad3d2d6989"
-
-[[projects]]
-  branch = "master"
-  digest = "1:46aee4748419921a611e49842c732b3b8afe6a0926017ad1a68b9d0e11fdd288"
+  digest = "1:8a44970c7e8c0a1c8646af14605c1ffd31374074d68101c2e11d7761df12c9d1"
   name = "golang.org/x/sys"
   packages = ["unix"]
   pruneopts = "UT"
-  revision = "34d275377bf96a094e8d5b0c61750ddd54cd6b36"
+  revision = "e047566fdf82409bf7a52212cf71df83ea2772fb"
 
 [[projects]]
   digest = "1:0e49ce3bb641491517ba5035619be50aa07619814665c9761d0decb48f35ea94"
@@ -152,12 +138,12 @@
   version = "v9.31.0"
 
 [[projects]]
-  digest = "1:b75b3deb2bce8bc079e16bb2aecfe01eb80098f5650f9e93e5643ca8b7b73737"
+  digest = "1:55b110c99c5fdc4f14930747326acce56b52cfce60b24b1c03ef686ac0e46bb1"
   name = "gopkg.in/yaml.v2"
   packages = ["."]
   pruneopts = "UT"
-  revision = "1f64d6156d11335c3f22d9330b0ad14fc1e789ce"
-  version = "v2.2.7"
+  revision = "53403b58ad1b561927d19068c655246f2db79d48"
+  version = "v2.2.8"
 
 [solve-meta]
   analyzer-name = "dep"
@@ -166,11 +152,6 @@
     "github.com/gin-gonic/gin",
     "github.com/go-sql-driver/mysql",
     "github.com/jinzhu/gorm",
-    "github.com/v1nland/mafi-backend-go/ApiHelpers",
-    "github.com/v1nland/mafi-backend-go/Config",
-    "github.com/v1nland/mafi-backend-go/Controllers",
-    "github.com/v1nland/mafi-backend-go/Models",
-    "github.com/v1nland/mafi-backend-go/Routers",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

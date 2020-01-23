@@ -1,7 +1,7 @@
 package Models
 
 import (
-	"github.com/v1nland/mafi-backend-go/Config"
+	"mafi-backend-go/Config"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
 )

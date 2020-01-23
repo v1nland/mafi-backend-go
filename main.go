@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/v1nland/mafi-backend-go/Config"
-	"github.com/v1nland/mafi-backend-go/Models"
-	"github.com/v1nland/mafi-backend-go/Routers"
+	"mafi-backend-go/Config"
+	"mafi-backend-go/Models"
+	"mafi-backend-go/Routers"
 	"fmt"
 	"github.com/jinzhu/gorm"
 )
