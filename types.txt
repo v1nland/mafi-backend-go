@@ -1,16 +1,7 @@
-AOLL
-BOLS
-brillo
-CALC
-ECOC
-ESTU
-flores y puntos
-FUND
-KANK
-KIPL
-LONC
-PAÑA
-RETI
-tela
-TOTE
-XIAU
+Mochila
+Funda de Notebook
+Estuche
+Calcetines
+Totebag
+Scrunchy
+N/A

@@ -57,13 +57,13 @@ func GetMostSold(c *gin.Context) {
 
 func GetStock(c *gin.Context) {
     type StockResult struct{
-		Id			int
-		Description	string
-        Bought		int
-        Sold		int
-        Type		string
-        Color		string
-		Sell		int
+		Id			int        `json:"id"`
+		Description	string     `json:"description"`
+        Bought		int        `json:"times_bought"`
+        Sold		int        `json:"times_sold"`
+        Type		string     `json:"type"`
+        Color		string     `json:"color"`
+		Sell		int        `json:"sell_price"`
     }
 
     var result []StockResult
