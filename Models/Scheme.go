@@ -42,7 +42,7 @@ type Purchase struct {
 	Item			Item	`json:"item"`
 	Description		string	`json:"description"`
 	Date			string	`json:"date"`
-	ItemQty			string	`json:"item_qty"`
+	ItemQty			uint	`json:"item_qty"`
 }
 
 func (p *Purchase) TableName() string {
