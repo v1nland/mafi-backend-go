@@ -7,7 +7,14 @@ import (
 )
 
 func GetAllOrder(order *[]Order) (err error) {
-	if err = Config.DB.Find(order).Error; err != nil {
+	if err = Config.DB.Preload("Item").Find(order).Error; err != nil {
+		return err
+	}
+	return nil
+}
+
+func GetPendingOrder(order *[]Order) (err error) {
+	if err = Config.DB.Preload("Item").Where("finished = ?", 0).Find(order).Error; err != nil {
 		return err
 	}
 	return nil

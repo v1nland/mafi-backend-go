@@ -2,7 +2,7 @@ package main
 
 import (
 	"mafi-backend-go/Config"
-	"mafi-backend-go/Models"
+	// "mafi-backend-go/Models"
 	"mafi-backend-go/Routers"
 	"fmt"
 	"github.com/jinzhu/gorm"
@@ -17,9 +17,11 @@ func main() {
 	}
 	defer Config.DB.Close()
 
-	Config.DB.AutoMigrate(&Models.Item{})
-	Config.DB.AutoMigrate(&Models.Order{})
-	Config.DB.AutoMigrate(&Models.Purchase{})
+	// Config.DB.AutoMigrate(&Models.Item{})
+	// Config.DB.AutoMigrate(&Models.Order{})
+	// Config.DB.AutoMigrate(&Models.Purchase{})
+	// Config.DB.AutoMigrate(&Models.Color{})
+	// Config.DB.AutoMigrate(&Models.Type{})
 
 	r := Routers.SetupRouter()
 

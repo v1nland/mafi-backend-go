@@ -16,6 +16,16 @@ func ListOrder(c *gin.Context) {
 	}
 }
 
+func ListPendingOrder(c *gin.Context) {
+	var order []Models.Order
+	err := Models.GetPendingOrder(&order)
+	if err != nil {
+		ApiHelpers.RespondJSON(c, 404, order)
+	} else {
+		ApiHelpers.RespondJSON(c, 200, order)
+	}
+}
+
 func AddNewOrder(c *gin.Context) {
 	var order Models.Order
 	c.BindJSON(&order)

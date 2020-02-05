@@ -7,7 +7,7 @@ import (
 )
 
 func GetAllPurchase(purchase *[]Purchase) (err error) {
-	if err = Config.DB.Find(purchase).Error; err != nil {
+	if err = Config.DB.Preload("Item").Find(purchase).Error; err != nil {
 		return err
 	}
 	return nil
