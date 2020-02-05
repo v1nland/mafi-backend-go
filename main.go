@@ -11,7 +11,7 @@ import (
 var err error
 
 func main() {
- 	Config.DB, err = gorm.Open("mysql", "beab05944c9484:08c3abbf@(us-cdbr-iron-east-01.cleardb.net)/heroku_3ad9b9052d3cbc1?charset=utf8&parseTime=True&loc=Local")
+ 	Config.DB, err = gorm.Open("mysql", "bb734e7268e276:7a973a38@(us-cdbr-iron-east-04.cleardb.net)/heroku_3f9539851a7ef01?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		fmt.Println("statuse: ", err)
 	}
