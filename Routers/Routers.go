@@ -31,6 +31,7 @@ func SetupRouter() *gin.Engine {
 		item := v1.Group("/item")
 		{
 			item.GET("", Controllers.ListItem)
+			item.GET("stock", Controllers.GetStock)
 			item.POST("", Controllers.AddNewItem)
 			item.GET("id/:id", Controllers.GetOneItem)
 			item.PUT(":id", Controllers.PutOneItem)
@@ -79,7 +80,6 @@ func SetupRouter() *gin.Engine {
 			stat.GET("box", Controllers.GetCurrency)
 			stat.GET("sources", Controllers.GetSources)
 			stat.GET("mostSoldItem", Controllers.GetMostSold)
-			stat.GET("itemStock", Controllers.GetStock)
 		}
 	}
 
